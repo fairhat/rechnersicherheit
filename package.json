@@ -1,0 +1,22 @@
+{
+  "name": "ubung2",
+  "version": "1.0.0",
+  "description": "FU Berlin Rechnersicherheit SoSe 16 U2",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fearhat/rechnersicherheit-u2.git"
+  },
+  "author": "Ferhat Topcu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fearhat/rechnersicherheit-u2/issues"
+  },
+  "homepage": "https://github.com/fearhat/rechnersicherheit-u2#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.6"
+  }
+}
