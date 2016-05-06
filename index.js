@@ -23,7 +23,7 @@ function importAntiGravity(results) {
     bcrypt.compare('correcthorsebatterystaple', rand.password, function (err, pass) {
       if (pass) {
         results.push({ name: rand.name, password: rand.password, text: 'correcthorsebatterystaple' })
-        // users = users.filter(k => k !== user) // remove user from users
+        users = users.filter(k => k !== rand) // remove user from users
         resolve(results)
       }
     })
@@ -99,19 +99,21 @@ if (process.argv[2] === 'start') {
   const spinner = new Spinner('das kann \'ne Weile dauern...')
   spinner.setSpinnerString('|/-\\')
   spinner.start()
-  checkPINCodes(result).then((k) => {
-    console.log('PINCodes fertig.')
-    return k
-  }).then(importAntiGravity).then((k) => {
+  importAntiGravity(result).then((k) => {
     console.log('Randall Munroe gefunden')
-
-  }).then(checkAmericanWords).then(() => {
+    return k
+  })
+  .then(checkAmericanWords).then((k) => {
+    console.log('Englisches Passwort gefunden.')
+  })
+  .then(checkPINCodes)
+  .then(() => {
     console.log('Fertig. Datei Speichern...')
     const fileName = '01234567ABCDEF'.split('').map((v, i, a) => i > 5 ? null : a[ Math.floor(Math.random() * 16) ]).join('') + '.json'
-    fs.writeFile(fileName, JSON.stringify(results), 'utf8', function (err, done) {
-      if (err) console.log(err)
-      console.log(`Datei: ${fileName} hat die Lösung.`)
-      spinner.stop()
-    })
+    fs.writeFileSync(fileName, JSON.stringify(result), 'utf8')
+    console.log(`Datei: ${fileName} hat die Lösung.`)
+    spinner.stop()
+    result.forEach((res) => console.log(`${res.name}: ${res.text}`))
   })
+  .catch((e) => console.error(e))
 }
