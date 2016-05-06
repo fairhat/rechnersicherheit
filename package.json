@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fearhat/rechnersicherheit-u2.git"
+    "url": "git+https://github.com/fearhat/rechnersicherheit.git"
   },
   "author": "Ferhat Topcu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fearhat/rechnersicherheit-u2/issues"
+    "url": "https://github.com/fearhat/rechnersicherheit/issues"
   },
-  "homepage": "https://github.com/fearhat/rechnersicherheit-u2#readme",
+  "homepage": "https://github.com/fearhat/rechnersicherheit#readme",
   "dependencies": {
     "bcrypt": "^0.8.6",
     "cli-spinner": "^0.2.5",
