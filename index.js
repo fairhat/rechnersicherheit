@@ -56,6 +56,7 @@ function checkPINCodes(results) {
               const _usr = Object.assign({ }, user, { text: pin })
               console.log(`${_usr.gid} | ${_usr.name}: ${_usr.text}`)
               users = users.filter(k => k !== user) // remove user from users
+              console.log(users)
               results.push(_usr)
             }
           }
