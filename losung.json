@@ -1,0 +1,32 @@
+[
+  {
+    "name": "carol",
+    "password": "$2a$08$vkSwAvJsyiJ9mYE9W2oCb..U0ZjlvgMBdTp/SSnQ8mA3lRCKIHWnO",
+    "text": "0668"
+  },
+  {
+    "name": "bob",
+    "password": "$2a$08$/dztC.2uVdr.EcMJ9f54uuSxvyYx6ljgrIO76iVKsd93QOK7llXDG",
+    "text": "4012"
+  },
+  {
+    "name": "dave",
+    "password": "$2a$08$GR.tWNusETxq44jak.3PQeFsMIxMr1zD1QmGMp.jbno0ELYt8v8Ym",
+    "text": "4415"
+  },
+  {
+    "name": "alice",
+    "password": "$2a$08$VCU.seQJ9.4EvnqFLAv.8uHr1hBhAPLxgHoGaA0uIKIvv7/ZbmQ0W",
+    "text": "8531"
+  },
+  {
+    "name": "rand",
+    "password": "$2a$08$wnOqQOhFW/eh33m24iLcvOqMLjrr3QRvCg9qw9ziMcKExBm0RcZV2",
+    "text": "correcthorsebatterystaple"
+  },
+  {
+    "name": "charlie",
+    "password": "$2a$08$DMCLZkHS7uZbSU4u9YaDKeiyibewB0dqco7rkFqpLUAzsHB34JDGa",
+    "text": "paleontology"
+  }
+]

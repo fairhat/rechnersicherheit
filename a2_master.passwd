@@ -1,0 +1,7 @@
+nobody:*:32767:32767::0:0:Unprivileged user:/nonexistent:/sbin/nologin
+alice:$2b$08$VCU.seQJ9.4EvnqFLAv.8uHr1hBhAPLxgHoGaA0uIKIvv7/ZbmQ0W:1001:1001::0:0:alice:/home/alice:/bin/ksh
+bob:$2b$08$/dztC.2uVdr.EcMJ9f54uuSxvyYx6ljgrIO76iVKsd93QOK7llXDG:1002:1002::0:0:bob:/home/bob:/bin/ksh
+charlie:$2b$08$DMCLZkHS7uZbSU4u9YaDKeiyibewB0dqco7rkFqpLUAzsHB34JDGa:1005:1005::0:0:charlie:/home/charlie:/bin/ksh
+carol:$2b$08$vkSwAvJsyiJ9mYE9W2oCb..U0ZjlvgMBdTp/SSnQ8mA3lRCKIHWnO:1003:1003::0:0:carol:/home/carol:/bin/ksh
+dave:$2b$08$GR.tWNusETxq44jak.3PQeFsMIxMr1zD1QmGMp.jbno0ELYt8v8Ym:1004:1004::0:0:dave:/home/dave:/bin/ksh
+rand:$2b$08$wnOqQOhFW/eh33m24iLcvOqMLjrr3QRvCg9qw9ziMcKExBm0RcZV2:1006:1006::0:0:Randall Munroe:/home/rand:/bin/ksh

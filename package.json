@@ -4,6 +4,7 @@
   "description": "FU Berlin Rechnersicherheit SoSe 16 U2",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js start",
     "test": "mocha"
   },
   "repository": {
@@ -17,6 +18,12 @@
   },
   "homepage": "https://github.com/fearhat/rechnersicherheit-u2#readme",
   "dependencies": {
-    "bcrypt": "^0.8.6"
+    "bcrypt": "^0.8.6",
+    "cli-spinner": "^0.2.5",
+    "progger": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }
